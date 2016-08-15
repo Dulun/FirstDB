@@ -12,7 +12,6 @@
 #include<list>
 #include<vector>
 #include"./FDB_Key_val.h"
-#include"./FDB_Key_val.cpp"
 
 class Data_Base
 {
@@ -51,6 +50,7 @@ public:
     bool Data_Base_set_ptime(std::string rhs,long long time);
     long long int Data_Base_get_time(std::string rhs);
 
+    char* FDB_Base_c_str(char *a, std::string rhs);
     void Data_Base_show();
 
     unsigned int GetKey_char(const void *key);
